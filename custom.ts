@@ -367,6 +367,11 @@ let distance = 0
             return pins.digitalReadPin(entrypir);
     }
     //% subcategory=MainSensor
+    //% block="read tilt and impact module pin %entrytilt value"
+    export function tilt(entrytilt: DigitalPin) {
+            return pins.digitalReadPin(entrytilt);
+    }
+    //% subcategory=MainSensor
     //% block="read potentiometer module pin %entrypot value"
     export function pot(entrypot: AnalogPin) {
             return pins.analogReadPin(entrypot);
@@ -396,5 +401,5 @@ let distance = 0
     export function isik(entryldr: AnalogPin) {
             return pins.analogReadPin(entryldr);
     }
-
+    
 }
